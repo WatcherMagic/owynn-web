@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Links</title>
+  </head>
+  <body>
+    <p><a href='/'>Return to index</a></p>
+    <p><a href=''>Return to basics</a></p>
+    <h1>Links</h1>
+    <p>This page is about links! There are three kinds of links:</p>
+    <ul>
+      <li>"Absolute" links are the most detailed. They start with the "scheme" (http:// or https://), then the domain name and the path to the target webpage. <strong>It's best to reserve absolute links only for directing users to a different website.</strong></li>
+      <ul>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>'https://developer.mozilla.org/en-US/docs/Web/HTML'</a></li>
+      </ul>
+      <li>"Relative" links point to another file from the same vantage point of the file you're editing. It's implied the scheme and domain name are the same, so you only provide the path.</li>
+      <ul>
+        <li>For example, here is our (a href='misc/extras.html')extras(/a) page.</li>
+        <li>For example, here is our <a href='misc/extras.html'>extras</a> page.</li>
+        <li>To point to a file in a directory above the file you're editing, you can use ".." to point to the parent directory, but that gets confusing fast.</li>
+      </ul>
+      <li>"Root-relative" links are similar to relative links, but instead of being relative to the current page they are relative to the "root" of the entire website. This only works on a hosted server, so you can't do it with just html files. If we did have a server, it would look like this:</li>
+      <ul>
+        <!-- This won't work for our local HTML files -->
+        <li>(a href='/')homepage(/a)</li>
+        <li>The only difference between a root-relative link and a relative one is the former starts with a forward slash: "/"</li>
+      </ul>
+    </ul>
+
+    <h2>Link Targets</h2>
+    <p>By default, most browsers replace the current page with a new one. You can use the "target" attribute to ask the web browser to open a link in a new tab.</p>
+    <ul>
+      <li>Note how the second attribute looks just like the first, but they are separated from each other by a space (or newline).</li>
+      <li>(a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank')Mozilla(/a)</li>
+      <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank'>Mozilla</a></li>
+    </ul>
+    <p>Unlike all HTML elements so far, <a href='images.html'>images</a> are defined <em>outside</em> the webpage.</p>
+  </body>
+</html>

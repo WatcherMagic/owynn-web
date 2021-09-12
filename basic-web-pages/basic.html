@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <!-- Metadata goes here -->
+    <title>Basic web page</title>
+  </head>
+  <body>
+    <!-- Content goes here -->
+    <h1>Basic web page</h1>
+    <p>This is a basic webpage.</p>
+    <p><a href='/'>Click here to return to index!</a></p>
+
+    <h2>Headings</h2>
+    <p>Headings define the outline of your site. There are six levels of headings. They define the outline as both humans and search engines see it.</p>
+
+    <h2>Lists</h2>
+    <p>This is how you make an unordered list:</p>
+    <ul>
+      <li>Add a "ul" element (it stands for unordered list.)</li>
+      <li>Add each item in its own "li" element.</li>
+      <li>They don't need to be in any particular order.</li>
+      <li><p>Some elements have rules about what other elements they can contain. An unordered list can only contain "li" elements, so to insert a paragraph wrap the "p" element with "li" elements.</p></li>
+      <li>Unordered lists are good candidates for representing item inventories, product features, pro/con comparisons, and navigational menues.</li>
+    </ul>
+    <p>With an unordered list, rearranging "li" elements shouldn't change the meaning of the list. If the sequence of items does matter, use an ordered list ("ol") instead:</p>
+    <ol>
+      <li>The new "ol" element wraps everything</li>
+      <li>But the "li" items inside it are the same.</li>
+      <li>Also note how the numbers increment on their own.</li>
+      <li>Ordered lists are good for step-by-step procedures like recipes, instructions, or tables of contents.</li>
+    </ol>
+
+    <h2>Inline Elements</h2>
+    <p>All items above are "block-level elements" (also called "flow content.") Block elements are always drawn on a new line, while inline elements can affect sections of text anywhere within a line.</p>
+    <p>For example, "p" is a block-level element, whereas "em" is an inline element that stands for "emphasis," <em>and is typically displayed as italicized text.</em></p>
+    <p>If you want to be more emphatic than an "em" tag, the "strong" element <strong>renders bold text.</strong></p>
+    <p>You can even <em>nest a <strong>"strong"</strong> tag inside an "em" tag,</em> or vice-versa.</p>
+    <p>The terms "strong" and "em," as opposed to "bold" and "italic" is an important distinction between HTML and CSS. HTML should provide <em>semantic</em> information, not <em>presentational</em> information. HTML defines the structure of a document, leaving its appearance to CSS.</p>
+
+    <h2>Empty HTML Elements</h2>
+    <p>The elements presented above either wrap content or other elements, but some HTML elements can be "empty" or "self-closing". Line breaks and horizontal rules are the most common empty elements.</p>
+    <h3>Line Breaks</h3>
+    <p>Simply entering a new line in code will render on the web as a space, so use the "br/" elements to insert a line break.<br/>This can be used anywhere text formating matters, such as poems, musical lyrics or signatures.<br/>Be careful not to abuse the line break, such as adding several to create a bunch of space between paragraphs. This kind of presentational information should be handled by your CSS script.</p>
+    <h3>Horizontal Rules</h3>
+    <p>The "hr/" element is a "horizontal rule," which represents a thematic break, such as a transition from one scene of a story to the next or between the end of a letter and a postscript. Think of it as having <em>less</em> significane than a separation by a new heading, but <em>more</em> than a new paragraph.</p>
+    <hr/>
+    <p>The horizonal rule's default appearance is a line, but with CSS you can make it appear as more space between sections, a decorative character, or anything else.</p>
+    <ul>
+      <li>As an aside, the trailing "/" in any empty HTML element is optional. You could also mark up a document with "br" and "hr".</li>
+    </ul>
+
+    <h2>Links and Images</h2>
+    <p>All the HTML elements above are very important, but they're only dealing with a single webpage. Links and images are fundamentally different in that they deal with <em>external</em> resources.</p>
+    <ul>
+      <li>Links point the user to a different HTML document.</li>
+      <li>Images pull another resource into the page.</li>
+    </ul>
+    <h3>Although this section is titled "Links and Images", it will actually focus around file and folder organization and an HTML concept called "Attributes"</h3>
+    <ul>
+      <li>You'll need three more HTML documents: links, images, and music/extras</li>
+      <li>You'll also need a few image files of various formats: .jpg, .gif, .png, .svg</li>
+    </ul>
+    <ol>
+      <li>Create a new folder called "links-and-images"</li>
+      <li>In that folder, create two html files "links", "images"</li>
+      <ul>
+        <li>They should be formatted like this:</li>
+        <li><p>(DOCTYPE html)<br>(html)<br>(head)<br>(title)Links(/title)<br>(/head)<br>(body)<br>(h1)Links(/h1)<br>(/body)<br>(/html)</p></li>
+      </ul>
+      <li>Also in the same folder, import a folder called "images" conatining your various image formats.</li>
+      <li>Create another folder titled "misc" and insert an html document called "extras"</li>
+    </ol>
+    <h3>Links</h3>
+    <p>Links are created using the "a" element, which stands for "anchor". It works like all the other text-wrapping elements; when you wrap text with it, it alters the meaning of that content. But the anchor on it's own isn't enough to create a link.</p>
+    <p>In the same way adding an element changes the meaning of the content it contains, adding an "attribute" changes the menaing of the element it's attached to.</p>
+    <p><strong>The "href" attribute determines where the user goes when they click an "a" element.</strong> See:</p>
+    <ul>
+      <li>This example is about (a href='links.html')links(/a) and (a href='images.html')images(/a).</li>
+      <li>This exmaple is about <a href='links-and-images/links.html'>links</a> and <a href='links-and-images/images.html'>images</a>.</li>
+    </ul>
+    <p><a href='misc/extras.html'>Extras</a></p>
+  </body>
+</html>

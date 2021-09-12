@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Images</title>
+  </head>
+  <body>
+    <p><a href='/'>Return to index</a></p>
+    <p><a href='/basic-web-pages/basic.html'>Return to basics</a></p>
+    <h1>Images</h1>
+    <p>Images are defined <em>outside</em> the webpage. Fortunately, we have a way to refer to external content using <a href='links.html'>links.</a> <strong>Images are included with the "/img" tag and its "src" attribute.</strong></p>
+    <p>There's four main image formats on the web, and they were all designed to do different things.</p>
+    <ul>
+      <li><strong>JPG</strong>s are good for large color pallettes without dramatically increasing file size, but they don't support transparent pixals.</li>
+      <li>(img src='images/mochi.jpg'/)</li>
+    </ul>
+    <img src='images/mochi.jpg'/>
+    <ul>
+      <li><strong>GIF</strong>s are the go-to for simple animations, but are limited in terms of color palette. Transparent pixals in GIFs are a binary option, so you can't have semi-opaque pixals.</li>
+      <li>(img src='images/mochi.gif'/)</li>
+    </ul>
+    <img src='images/mochi.gif'/>
+    <ul>
+      <li><strong>PNG</strong>s are for anything that's not photo or animated. A PNG file of the same quality as a JPG (to the human eye) would generally be a bigger file. They deal with opacity just fine and don't have palette limitations, so use them for icons, tehcnical diagrams, logos, etc.</li>
+      <li>(img src='images/mochi.png'/)</li>
+    </ul>
+    <img src='images/mochi.png'/>
+    <ul>
+      <li><strong>SVG</strong>s are a vector-based format, so it can scale to any dimension without loss of quality. They're a great tool for responsive design, and pretty much all the same use cases as PNGs. One potential problem is, for them to display consistently across browsers, you need to convert any text fields to outlines. This can have a big impact on file size.</li>
+      <li>(img src='images/mochi.svg'/)</li>
+    </ul>
+    <img src='images/mochi.svg'/>
+
+    <h2>Text Alternatives</h2>
+    <p>Adding "alt" attributes to your images is best practice. It defines a "text alternative" to the image being displayed. This affects both search engines and text-only browsers, such as text-to-speech used by people with vision impairment.</p>
+    <ul>
+      <li>In example: (img src='images/mochi.svg' alt='A mochi ball with Bézier handles'/)</li>
+    </ul>
+  </body>
+</html>
