@@ -59,3 +59,28 @@ div {
 	box-sizing: border-box;
 	margin: 20px auto; /* Vertical Horizontal */
 }
+.introduction {
+	color: #7E8184;
+	font-style: italic;
+}
+.menu {
+	position: fixed;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #B2D6FF;
+	border-bottom: 2px solid #bbb;
+}
+.menu .menu-item {
+	float: left;
+}
+.menu .menu-item .menu-button {
+	display: block;
+	padding: 8px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+.menu-div {
+	display: block;
+}
