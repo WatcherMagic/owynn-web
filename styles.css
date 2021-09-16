@@ -6,14 +6,14 @@
 	/* "universal: CSS selector (*) override default browser style */
 }
 body {
-	color: #414141; /* dark gray */
-	background-color: #EEEEEE /* light gray */
+	color: #7E8184; /* dark gray */
+	background-color: #ffffff; /* white */
 	font-size: 18px;
 }
 h1 {
 	font-size: 2em; /* font is twice as big as paragraph font */
 	padding: 50px;
-	border-bottom: 1px solid #5D6063; /* border: size style color */
+	border-bottom: 1px solid #ffffff; /* border: size style color */
 }
 h2 {
 	font-size: 1.6em; /* font is 1.6 times as big as paragraph font */
@@ -30,10 +30,6 @@ ol {
 a {
 	text-decoration: none; /* removes default underline from all our links */
 }
-/*Following is for box styles*/
-h1, p {
-	background-color: #DDE0E3; /* light gray */
-}
 em, strong {
 	background-color: #B2D6FF; /* light blue */
 }
@@ -44,24 +40,28 @@ p {
 	padding-right: 10px;
 	/* can be re-written as (padding: <vertical> <horizontal>) */
 	/* or: (padding: <top> <right> <bottom> <left> */
-	margin-bottom: 50px;
 }
-div {
-	color: #FFF;
-	background-color: #5995DA;
+.page {
+	width: 900px;
+	margin: 0 auto;
+}
+.container {
+	overflow: hidden;
+	background-color: #EAEDF0;
+}
+.button {
+	color: #ffffff;
+	background-color: #6495ED; /* cornflower blue */
+	width: 200px;
+	height: 100px;
 	font-weight: bold;
 	padding: 20px;
 	text-align: center;
-	border: 2px solid #5D6063;
-	border-radius: 5px;
-	
-	width: 200px;
-	box-sizing: border-box;
-	margin: 20px auto; /* Vertical Horizontal */
+	margin: 0 auto;
+	border: 1px solid #FFF;
 }
 .introduction {
-	color: #7E8184;
-	font-style: italic;
+	color: #ffffff; /* white */
 }
 .menu {
 	position: fixed;
@@ -81,6 +81,52 @@ div {
 	margin-right: 10px;
 	font-weight: bold;
 }
-.menu-div {
-	display: block;
+.sidebar {
+	float: left;
+	width: 200px;
+	height: 300px;
+	background-color: #F09A9D; /* red */
+}
+.content {
+	float: left;
+	width: 650px;
+	height: 500px;
+	padding: 20px;
+	background-color: #F5CF8E; /* yellow */
+}
+.footer {
+	overflow: hidden;
+	clear: both;
+	background-color: #D6E9FE; /* light blue */
+}
+.column {
+	overflow: hidden;
+	float:left;
+	width: 31%;
+	margin: 20px 1.15%;
+	height: 160px;
+	background-color: #B2D6FF; /* medium blue */	
+}
+.article-image {
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+.avatar {
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin: 25px;
+	border-radius: 40px;
+	background-color: #D6E9FE;
+}
+.username {
+	margin-top: 30px;
+}
+.comment {
+	margin: 10px;
+	overflow: hidden; /* This is important */
 }
